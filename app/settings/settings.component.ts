@@ -19,7 +19,7 @@ export class SettingsComponent {
 		this.myItems = [];
 		this.counter = 0;
 		setTimeout(() => {
-			this.myItems.push(new DataItem(4, "data item " + i));
+			this.myItems.push(new DataItem(4, "data item " + 4));
 		}, 1000)
 	}
 	public onItemTap(args) {
