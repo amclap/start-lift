@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import dialogs = require("ui/dialogs")
+import dialogs = require("ui/dialogs");
+
 @Component({
     selector: "anmc-app",
     templateUrl: "app.component.html",

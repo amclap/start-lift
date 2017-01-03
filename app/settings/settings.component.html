@@ -1,9 +1,15 @@
-<Label text="sss" textWrap="true"></Label>
-<ListView [items]="myItems" (itemTap)="onItemTap($event)">
-    <template let-item="item" let-i="index" let-odd="odd" let-even="even">
-        <StackLayout [class.odd]="odd" [class.even]="even">
-            <Label [text]='"index: " + i'></Label>
-            <Label [text]='"[" + item.id +"] " + item.name'></Label>
-        </StackLayout>
-    </template>
-</ListView>
+<Label text="ssss" textWrap="true"></Label>
+<TabView #tableView>
+    <TabView.items>
+        <TabViewItem title="Tab 1">
+            <TabViewItem.view>
+                <Label text="Label in Tab1"></Label>
+            </TabViewItem.view>
+        </TabViewItem>
+        <TabViewItem title="Tab 2">
+            <TabViewItem.view>
+                <Label text="Label in Tab2"></Label>
+            </TabViewItem.view>
+        </TabViewItem>
+    </TabView.items>
+</TabView>
